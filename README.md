@@ -21,6 +21,19 @@ or
 gulp dev
 ```
 
+## 问题
+
+Linux 下如果执行时遇到
+
+> Fatal error: ENOSPC: System limit for number of file watchers reached
+
+执行下述命令即可
+
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+sudo sysctl --system
+```
+
 ## 致谢
 
-本示例参考 [纯手工打造前端后端分离项目中的mock-server](https://yanm1ng.github.io/2017/06/12/纯手工搭建本地-mock-服务打造前端后端分离项目中的mock-server/) 和 [taro-library : 搭建本地-mock-服务](https://github.com/imageslr/taro-library#) 创建。
+本示例参考 [纯手工打造前端后端分离项目中的 mock-server](https://yanm1ng.github.io/2017/06/12/纯手工搭建本地-mock-服务打造前端后端分离项目中的mock-server/) 和 [taro-library : 搭建本地-mock-服务](https://github.com/imageslr/taro-library#) 创建。
