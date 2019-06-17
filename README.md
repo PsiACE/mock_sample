@@ -23,7 +23,7 @@ gulp dev
 
 ## 问题
 
-Linux 下如果执行时遇到
+Linux 下，如果执行时遇到
 
 > Fatal error: ENOSPC: System limit for number of file watchers reached
 
